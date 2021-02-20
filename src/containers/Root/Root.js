@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import Footer from '../Footer';
 import Login from '../Login'
 
 // const Login = lazy(() => import('../Login'))
@@ -7,11 +8,14 @@ import Login from '../Login'
 
 const Root = () => {
   return (
-    <Switch>
-      <Suspense fallback={null}>
-        <Route path="/login" component={Login} />
-      </Suspense>
-    </Switch>
+    <>
+      <Switch>
+        <Suspense fallback={null}>
+          <Route path="/login" component={Login} />
+        </Suspense>
+      </Switch>
+      <Footer />
+    </>
   )
 }
 

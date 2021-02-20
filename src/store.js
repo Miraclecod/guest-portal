@@ -30,8 +30,8 @@ const config = {
 
 const persistedReducer = persistReducer(config, rootReducer(history));
 
-export const store = createStore(persistedReducer, initialState, composedEnhancers);
+const store = createStore(persistedReducer, initialState, composedEnhancers);
 
 export const persistor = persistStore(store);
 
-//export default store;
+export default store;
