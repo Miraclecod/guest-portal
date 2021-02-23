@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { ConnectedRouter } from 'connected-react-router'
-import { history, persistor, store } from './store'
+import store, { history, persistor } from './store'
 import Root from './containers/Root'
 
 import './styles/_global.scss'
