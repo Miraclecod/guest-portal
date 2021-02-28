@@ -13,14 +13,16 @@ const renderStartPage = () => {
 
 const Root = () => {
   return (
+    <>
     <Switch>
       <Suspense fallback={null}>
         <Route exact path="/" render={renderStartPage} />
         <Route path="/dashboard" render={routeProps => <HeaderBar {...routeProps} />} />
         <Route path="/login" component={Login} />
       </Suspense>
-       <Footer />
     </Switch>
+    <Footer />
+    </>
   )
 }
 
