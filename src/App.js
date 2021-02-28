@@ -1,13 +1,20 @@
-import React from "react";
-import './App.css';
+import React from 'react';
+import { Provider } from 'react-redux'
+import { PersistGate } from 'redux-persist/integration/react'
+import { ConnectedRouter } from 'connected-react-router'
+import store, { history, persistor } from './store'
+import Root from './containers/Root'
 
-const App = () => {
+import './styles/_global.scss'
 
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+const App = () => (
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <ConnectedRouter history={history}>
+        <Root />
+      </ConnectedRouter>
+    </PersistGate>
+  </Provider>
+)
 
 export default App;

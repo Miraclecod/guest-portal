@@ -1,0 +1,83 @@
+
+.HeaderBar-Container {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 9.8%;
+    margin-right: 9.8%;
+}
+
+.HeaderBar-Column {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 0px;
+    margin-left: 0%;
+}
+
+.HeaderBar-Column-left {
+    margin-left: 37%;
+}
+
+.Link-style {
+    padding-right: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.Link-style-bold {
+    font-weight: bold;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+.button1 {
+    min-width: 87px;
+    height: 34px;
+    border: 2px solid#BC9CFF;
+    border-radius: 22px;
+    color: #BC9CFF;
+    cursor: pointer;
+    background-color: white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button2 {
+    min-width: 87px;
+    height: 34px;
+    border: 2px solid#BC9CFF;
+    border-radius: 22px;
+    color: white;
+    cursor: pointer;
+    background-color: #BC9CFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-line {
+    font-family: Montserrat;
+    height: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+    border-left: 1px solid #ccc; 
+    padding-left: 20px; 
+}
