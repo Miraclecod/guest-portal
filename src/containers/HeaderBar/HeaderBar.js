@@ -6,10 +6,9 @@ import './HeaderBar.scss';
 
 const HeaderBar = props => {
 
-    const [isOpenModal, setOpenModal] = React.useState(false)
+    const [isOpenModal, setOpenModal] = React.useState(false);
 
-    const { user, signOut, token } = props
-
+    const { signOut, user, token } = props;
     // React.useEffect(() => {
     //     const closeLogOutModal = document.getElementById('dashBoardContainer')
     //     closeLogOutModal.addEventListener('click', () => setOpenModal(false))
@@ -44,8 +43,15 @@ const HeaderBar = props => {
                 <Link to='/about' className="Link-style">Соглашения<img src={expand} /></Link>
             </div>
             <div className="HeaderBar-Column">
+            { !token ? ( 
+                <>
                 <button className="button1">ВОЙТИ</button>
                 <button className="button2">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </>
+                ) : (
+                    <p className="text-line">{user}</p>
+                )
+            }
             </div>
         </div>
     )
